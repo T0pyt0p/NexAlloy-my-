@@ -1,13 +1,10 @@
 name: Android Release CI
 
 on:
-  push:
-    tags:
-      - '*.*.*'
+  workflow_dispatch:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     permissions:
       contents: write
